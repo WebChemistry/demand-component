@@ -1,0 +1,13 @@
+{
+	"name": "webchemistry/demand-component",
+	"type": "library",
+	"require": {
+		"nette/application": "~3.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"WebChemistry\\DemandComponent\\": ["src/"]
+		}
+	},
+	"minimum-stability": "RC"
+}

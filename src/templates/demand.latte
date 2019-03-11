@@ -1,0 +1,18 @@
+{snippet demand}
+	{if $rendering[above]}
+		{var [$name, $method] = $rendering[above]}
+		{control $name:$method}
+	{/if}
+
+	{if $visible}
+		{control demand}
+	{elseif $rendering[before]}
+		{var [$name, $method] = $rendering[before]}
+		{control $name:$method}
+	{/if}
+
+	{if $rendering[below]}
+		{var [$name, $method] = $rendering[below]}
+		{control $name:$method}
+	{/if}
+{/snippet}
